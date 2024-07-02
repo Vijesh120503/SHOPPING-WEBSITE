@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="parent">
+        <!-- top -->
+        
+        <div class="top">
+            <div class="top-left">
+                <p>Ecommerce</p>
+            </div>
+            <div class="top-right">
+                <button onclick="bt()">Cart</button>
+            </div>
+
+        </div>
+
+        <h2 style="text-align:center;">Shop products</h3>
+
+
+        <div class="prod">
+            <div class="outer-box">
+                <div class="box">
+                    <img src="assets/shirts.jpeg" alt="">
+                </div>
+                <div class="box-1">
+                    <div class="box-1-1">
+                        <h3>AEROREADY SHIRT</h3>
+                        <p>$<span class="value">25</span></p>
+                    </div>
+                    <div class="top-right">
+                        <button onclick="add(this)">Cart</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="outer-box">
+                <div class="box">
+                    <img src="assets/earpods.jpg" alt="">
+                </div>
+                <div class="box-1">
+                    <div class="box-1-1">
+                        <h3>WIRELESS EARBUDS</h3>
+                        <p>$<span class="value">100</span></p>
+                    </div>
+                    <div class="top-right">
+                        <button onclick="add(this)">Cart</button>
+                    </div>
+                </div>
+            </div>
+    
+            
+    
+            <div class="outer-box">
+                <div class="box">
+                    <img src="assets/hoodies.jpg" alt="">
+                </div>
+                <div class="box-1">
+                    <div class="box-1-1">
+                        <h3>HOODED PARKA</h3>
+                        <p>$<span class="value">45</span></p>
+                    </div>
+                    <div class="top-right">
+                        <button onclick="add(this)">Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-box">
+                <div class="box">
+                    <img src="assets/eye_glass.jpeg" alt="">
+                </div>
+                <div class="box-1">
+                    <div class="box-1-1">
+                        <h3>EYE GLASSES</h3>
+                        <p>$<span class="value">50</span></p>
+                    </div>
+                    <div class="top-right">
+                        <button onclick="add(this)">Cart</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="outer-box">
+                <div class="box">
+                    <img src="assets/cap.jpg" alt="">
+                </div>
+                <div class="box-1">
+                    <div class="box-1-1">
+                        <h3>CASUAL  CAPS</h3>
+                        <p>$<span class="value">50</span></p>
+                    </div>
+                    <div class="top-right">
+                        <button onclick="add(this)">Cart</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="outer-box">
+                <div class="box">
+                    <img src="assets/bag.jpeg" alt="">
+                </div>
+                <div class="box-1">
+                    <div class="box-1-1">
+                        <h3>TRENDY BACKPACK</h3>
+                        <p>$<span class="value">70</span></p>
+                    </div>
+                    <div class="top-right">
+                        <button onclick="add(this)">Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="cart">
+                <h2 style="text-align:right; color: red;" onclick="cancel()">X</h2>
+                <h3 style="text-align: center;">Your Cart</h3>
+                <hr>
+                <h6 id="add"></h6>
+                <h4 style="text-align: right;">Total $<span id="value">0</span></h4>
+                <button onclick="buy()">BUY NOW</button>
+            </div>
+    
+
+        
+
+    </div>
+    
+    
+
+    <script src="cart.js"></script>
+</body>
+</html>
